@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Über uns</title>
+    <link th:href="@{/styles/css/ueberuns.css}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" th:href="@{/styles/css/favicon.ico}"/>
+    <script type="text/javascript" th:src="@{/styles/javascript/home.js}"></script>
+</head>
+<body>
+
+
+
+<!--Navigation-->
+<nav>
+    <ul class="menu" th:fragment="header">
+        <li th:classappend="logo"><a th:href="@{/home}">Ferienhaus Constanti <img th:src="@{/styles/css/Logo.png}" height="60px;"> </a></li>
+        <li th:classappend="item"><a th:href="@{/home}">Home</a></li>
+        <li th:classappend="item"><a th:href="@{/ueberuns}">Über uns</a></li>
+        <li th:classappend="item"><a th:href="@{/ferienhaueser}">Ferienhäuser</a></li>
+        <li th:classappend="item"><a th:href="@{/home}">Vermietung</a></li>
+        <li th:classappend="item"><a th:href="@{/kontakt}">Kontakt</a></li>
+        <li th:classappend="item"><a th:href="@{/links}">Links</a></li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button secondary"><a href="#">Sign Up</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+</nav>
+
+<div class="flex-container">
+    <div class="flex-item-left">
+
+        <h1> Über uns</h1>
+
+
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+
+
+
+        <p>Be not afraid of greatness.<br>
+            Some are born great,<br>
+            some achieve greatness,<br>
+            and others have greatness thrust upon them.</p>
+
+    </div>
+
+    <div class="flex-item-right">
+        <img src="images/House_from_us.png" height="auto" width="800px" alt="house of us">
+    </div>
+</div>
+
+
+</body>
+</html>

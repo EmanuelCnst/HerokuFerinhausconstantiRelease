@@ -1,0 +1,246 @@
+
+body{
+
+
+    /* Rsponsive Background Image*/
+    background-image: url("Sonnenuntergang.JPG");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Background image is fixed in the viewport so that it doesn’t move when
+the content’s height is greater than the image’s height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+on the container’s size */
+    background-size: cover;
+    background-color: #464646;
+
+
+}
+
+/*#region Navigation*/
+nav {
+    background: #222;
+    margin:auto;
+    padding-right: 5px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.logo a:hover {
+    text-decoration: none;
+
+}
+.menu li {
+    font-size: 24px;
+    padding: 5px 5px;
+    white-space: nowrap;
+}
+.logo a,
+.toggle a {
+    font-size: 26px;
+
+}
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle {
+    order: 1;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+.item.active {
+    display: block;
+}
+
+
+/* Tablet menu */
+@media all and (min-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+    }
+    .button.secondary a {
+        background: transparent;
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    }
+}
+
+/* Desktop menu */
+@media all and (min-width: 900px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+/*#endregion */
+
+/*#region Slideshow*/
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+
+/*#endregion*/
+
+/*#region Content*/
+
+.flex-container{
+    /*
+    First we have to define that the flexboox as parent.
+     */
+    display: flex;
+
+    /*define the flow action
+     */
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+
+
+    padding: 0px;
+    margin:  0px;
+}
+
+.main{
+    margin: 10px;
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 35px;
+    background: lightblue;
+    background: transparent;
+}
+
+/*# endregion*/
+
+
+

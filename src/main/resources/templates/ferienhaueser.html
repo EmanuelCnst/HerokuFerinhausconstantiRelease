@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Ferienhäuser</title>
+    <link th:href="@{/styles/css/ferienhaueser.css}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" th:href="@{/styles/css/favicon.ico}"/>
+    <script type="text/javascript" th:src="@{/styles/javascript/home.js}"></script>
+</head>
+<body>
+
+
+
+<!--Navigation-->
+<nav>
+    <ul class="menu" th:fragment="header">
+        <li th:classappend="logo"><a th:href="@{/home}">Ferienhaus Constanti <img th:src="@{/styles/css/Logo.png}" height="60px;"> </a></li>
+        <li th:classappend="item"><a th:href="@{/home}">Home</a></li>
+        <li th:classappend="item"><a th:href="@{/ueberuns}">Über uns</a></li>
+        <li th:classappend="item"><a th:href="@{/ferienhaueser}">Ferienhäuser</a></li>
+        <li th:classappend="item"><a th:href="@{/home}">Vermietung</a></li>
+        <li th:classappend="item"><a th:href="@{/kontakt}">Kontakt</a></li>
+        <li th:classappend="item"><a th:href="@{/links}">Links</a></li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button secondary"><a href="#">Sign Up</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+</nav>
+
+
+<div class="header">
+    <h1>Unsere Ferienhäuser</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+    <div class="flex-container">
+
+
+        <div class="flex-item-left">
+
+            <h2>Garnisch</h2>
+
+            <p>Be not afraid of greatness.<br>
+                Some are born great,<br>
+                some achieve greatness,<br>
+                and others have greatness thrust upon them. <a href="detail" >Detail</a></p>
+
+
+            <img src="images/HausimGarten.jpg" alt="Haus im Garten" width="800px" height="600px" >
+
+
+
+            <h2>Rütli</h2>
+
+            <p>Be not afraid of greatness.<br>
+                Some are born great,<br>
+                some achieve greatness,<br>
+                and others have greatness thrust upon them.   <a href="detail" >Detail</a></p>
+
+
+            <img src="images/HousewithFlowers.jpg" alt="Haus im Garten" width="800px" height="600px" >
+
+            </div>
+
+
+        <div class="flex-item-right">
+
+            <h2>Sempach</h2>
+            <p>Be not afraid of greatness.<br>
+                Some are born great,<br>
+                some achieve greatness,<br>
+                and others have greatness thrust upon them. <a href="detail" >Detail</a></p>
+
+
+            <img src="images/HouseatMountain.jpg" width="800px" height="600px">
+
+            <h2>Gadusch</h2>
+            <p>Be not afraid of greatness.<br>
+                Some are born great,<br>
+                some achieve greatness,<br>
+                and others have greatness thrust upon them.  <a href="detail" >Detail</a></p>
+
+
+            <img src="images/HouseIntheWoods.jpg" width="800px" height="600px">
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

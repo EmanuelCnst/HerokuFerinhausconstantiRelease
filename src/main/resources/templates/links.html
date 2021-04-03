@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <link th:href="@{/styles/css/links.css}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" th:href="@{/styles/css/favicon.ico}"/>
+</head>
+
+<!--Homme Fragment-->
+
+<body>
+
+<!--Navigation-->
+<nav>
+    <ul class="menu" th:fragment="header">
+        <li th:classappend="logo"><a th:href="@{/home}">Ferienhaus Constanti <img th:src="@{/styles/css/Logo.png}" height="60px;"> </a></li>
+        <li th:classappend="item"><a th:href="@{/home}">Home</a></li>
+        <li th:classappend="item"><a th:href="@{/ueberuns}">Über uns</a></li>
+        <li th:classappend="item"><a th:href="@{/ferienhaueser}">Ferienhäuser</a></li>
+        <li th:classappend="item"><a th:href="@{/home}">Vermietung</a></li>
+        <li th:classappend="item"><a th:href="@{/kontakt}">Kontakt</a></li>
+        <li th:classappend="item"><a th:href="@{/links}">Links</a></li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button secondary"><a href="#">Sign Up</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+</nav>
+
+
+
+<div class="flex-container">
+    <div class="flex-item-left">
+
+        <h1>Nützliche Links</h1>
+        <h3>Informatinonen über das Gebiet:</h3>
+        <a href="http://www.huettikon.ch/xml_1/internet/de/application/d14/f15.cfm" target="_blank"> Gemeinde Hüttikon </a>
+
+
+        <h3>Freizeit aktivitäten:</h3>
+        <a href="https://www.outdooractive.com/de/gemeinde/schweiz/zuerich/dielsdorf/huettikon/1036135/" target="_blank"> Oudoor Aktivitäten</a>
+
+
+        <h3>Auslflugtipps:</h3>
+ <a href="https://www.waldschenke-altberg.ch/" target="_blank"> Waldschenke Altberg </a>        <br>
+        <a href="https://wegwandern.ch/listing/laegern-regensberg-baden-laegeren-dielsdorf-zuerich-wandern-schweiz-wanderungen-tageswanderungen-gratwanderung-panoramweg/" target="_blank"> Regensberg </a>        <br>
+        <a href="https://www.museumaargau.ch/schloss-habsburg/anreise" target="_blank"> Schloss Habsburg </a>        <br>
+
+        <h3>Sonstige Links:</h3>
+        <a href="https://www.shoppitivoli.ch/" target="_blank"> Shoppi Tivoli</a>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

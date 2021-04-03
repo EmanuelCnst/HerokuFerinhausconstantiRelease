@@ -1,0 +1,4 @@
+package ch.ec.ConstantisFerienVermietung.Security;
+
+public class SecurityConfig {
+}
