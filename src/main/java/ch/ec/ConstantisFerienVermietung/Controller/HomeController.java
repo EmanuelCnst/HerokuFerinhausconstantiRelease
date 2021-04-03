@@ -18,7 +18,7 @@ public class HomeController {
 
         model.addAttribute("ModelStartseite",myModelHome);
 
-        return "home";
+        return "index";
     }
 
 
@@ -26,7 +26,7 @@ public class HomeController {
     public String Submit(@ModelAttribute HomeModel homeModel){
 
 
-        return "home";
+        return "index";
 
     }
 }
